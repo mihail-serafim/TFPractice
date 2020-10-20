@@ -4,5 +4,6 @@ In this repo, I explore a variety of commonly used learning algorithms such as:
   - Classification
   - Clustering
   - Hidden Markov Models
+  - More to come!
 
 All of these examples are based on datasets from Google's [TensorFlow Datasets](https://www.tensorflow.org/datasets/catalog/overview)
