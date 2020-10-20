@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from make_input_fn import *
 
-# in this project, I use Google's Titanic data set to create a linear regression model, and plot predicted survival probabilities.
+# In this project, I use Google's Titanic data set to create a linear regression model, and plot predicted survival probabilities.
 # I organized my data into feature columns, turned them into tensorflow datasets, and used these datasets to create my model.
 
 
@@ -39,7 +39,7 @@ linear_est.train(train_input_fn)  # train
 result = linear_est.evaluate(eval_input_fn)  # get model metrics/stats by using test data
 
 # get some basic information about my linear regression model
-print("Accuracy: {}%".format(result['accuracy']))
+print("Accuracy: {:>6.3f}%".format(100 * result['accuracy']))
 
 # and plot a histogram of predicted survival probabilities for test data 
 pred_dicts = list(linear_est.predict(eval_input_fn))
